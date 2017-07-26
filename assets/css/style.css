@@ -84,22 +84,6 @@ h3 {
   background: #4aaaa5;
 }
 
-nav {
-  float: inherit;
-  text-align: center;
-  margin-top: 25px;
-}
-
-nav a {
-  display: inline-block;
-  padding-left: 15px;
-  margin-left: 35px;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 1px solid #efefef;
-}
-
 nav a:first-child {
   border-left: 0 none;
 }
@@ -201,7 +185,7 @@ footer {
 /* main */
 
 #main-container {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .main-section {
@@ -222,42 +206,17 @@ footer {
   margin-right: 25px;
 }
 
-.work {
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
-.work img {
-  width: 100%;
-  border: 0 none;
-  opacity: 0.8;
-}
-
-.work h3 {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 0;
-  font-weight: 300;
-  line-height: 30px;
-  color: #fff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
-}
 .light {
   font-weight: 400;
 }
 @media screen and (max-width: 980px) {
-  .sidebar {
+    #main-container {
+  padding-top: 20px;
+}
+    #namebar {
+        margin-left: 20px;
+    }
+    .sidebar {
     width: 100%;
     max-width: none;
     float: none;
@@ -289,6 +248,13 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    #main-container {
+  padding-top: 15px;
+}
+    #start {
+        padding-top:5px;
+    }
+
   @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
@@ -317,7 +283,10 @@ footer {
     transform: scale(1);
   }
 }
-    .sidebar {
+  #namebar {
+        margin-left: 20px;
+    }
+  .sidebar {
     width: 100%;
     max-width: none;
     float: none;
@@ -325,10 +294,10 @@ footer {
   }
 
  .navbar-custom {
-    padding: 20px 0;
+    padding: 0;
+    margin-right: 10px;
     border-bottom: none;
     letter-spacing: 1px;
-    background: transparent;
     -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
@@ -339,6 +308,13 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   } 
 
+  #namebar {
+        margin-right:20px;
+        margin-top:10px;
+    }
+    #menucollapse {
+    margin-right:50px;
+}
   .main-section {
     width: 100%;
     max-width: none;
@@ -364,17 +340,35 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
-  .sidebar {
+    #main-container {
+  padding-top: 10px;
+}
+#start {
+    padding-top:20px;
+}
+  #namebar {
+        margin-right:20px;
+        margin-top:10px;
+    }
+    .sidebar {
     width: 100%;
     max-width: none;
     float: none;
     margin-top: 20px;
   }
+#menucollapse {
+    margin-right:50px;
+}
   #logo {
     width: 100%;
     padding: 10px 0px 0px 10px;
   }
-
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    height: 30px;
+    margin-right: 10px;
+    background: #4aaaa5;
+  } 
   .auth-image {
     width: 50%;
     height: 50%;
