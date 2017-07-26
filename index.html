@@ -5,17 +5,54 @@
   <meta charset="UTF-8">
     <title>About | Kari Hermann</title>
      <!-- styles -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- CSS Style Sheet-->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Add IntroJs styles -->
     <link href="introjs.css" rel="stylesheet">
     <!--Bootstrap CSS-->
     <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
 </head>
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <header>
     <!--This is the NavBar-->
-<header id="masthead">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Kari</span> Hermann
+                </a>
+            </div>
+ <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    </header>           
+<!-- <header id="masthead">
 <div class="container">
     <a href="#" id="logo">Kari Hermann</a>
       <nav>
@@ -24,7 +61,7 @@
         <a href="#">Contact</a>
       </nav>
 </div>
-</header>
+</header> -->
 
 <div class="container" id="start">
     <a class="btn btn-large btn-danger" href="javascript:void(0);" onclick="startIntro();">START HERE</a>
@@ -32,14 +69,12 @@
 
 <div id="main-container" class="container">
     <section class="main-section">
-        <h1 >About Me</h1>
-        <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/18156847_10102967145852790_4128904046223084232_n.jpg?oh=c1fd5525504ec38de53f53b52e6b3c62&oe=59AC97C9" class="auth-image" alt="Your Name" id="step4">
-        <div id="step2" class="span6">
-    <p>I am a rock climber and pet sitter living in Davidson, NC. I enjoy spending time with my boyfriend (Michael) and my dog (Melly) in the mountains. I also enjoy paleo cooking, nutrition, making earrings, and playing Two Dots and Tetris.</p>
-    </div>
-        <div id="step3" class="span6">
-    <p>I decided to learn coding a few month ago when a friend pointed out the similarities between coding and rock climbing. Problem solving, constant challenges, brief victories, and unlimited amounts of frustration. I looked for a bootcamp that would provide a full-stack education to learn as much as I could and settled on the UNCC program. I am very excited about this journey.</p>
-    </div>
+    <h1 >About Me</h1>
+        <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/18156847_10102967145852790_4128904046223084232_n.jpg?oh=c1fd5525504ec38de53f53b52e6b3c62&oe=59AC97C9" id="step4" class="auth-image" alt="Your Name">
+        <div id="step2">
+        <p>I am a rock climber and pet sitter living in Davidson, NC. I enjoy spending time with my boyfriend (Michael) and my dog (Melly) in the mountains. I also enjoy paleo cooking, nutrition, making earrings, and playing Two Dots and Tetris.</p>
+            </div>
+        <p id="step3">I decided to learn coding a few month ago when a friend pointed out the similarities between coding and rock climbing. Problem solving, constant challenges, brief victories, and unlimited amounts of frustration. I looked for a bootcamp that would provide a full-stack education to learn as much as I could and settled on the UNCC program. I am very excited about this journey.</p>
     </section>
 
 <script type="text/javascript" src="intro.js"></script>
@@ -96,7 +131,7 @@
         <img src="assets/images/stackoverflow.png" class="social" alt="Stack Overflow" /></a>
       </div>
 </section>
-  </div>
+
 
   <div id="step6">
   <footer>
@@ -105,6 +140,11 @@
     </div>
   </footer>
   </div>
+  <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/navbar.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    
 </body>
 
 </html>
